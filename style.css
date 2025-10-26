@@ -1,0 +1,115 @@
+/* Basic look */
+:root{
+  --bg:#0f1720;
+  --accent:#f2aa4c;
+  --muted:#cbd5e1;
+  --panel:#0b1220;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--muted);
+  font-family:Inter, system-ui, Arial, sans-serif;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  padding:20px;
+}
+
+header h1{
+  margin:6px 0 0 0;
+  color:var(--accent);
+  font-size:1.6rem;
+}
+.sub{margin:4px 0 14px 0;color:#9fb0c8;font-size:0.95rem}
+
+/* Controls */
+.controls{
+  width:100%;
+  max-width:1100px;
+  background:rgba(255,255,255,0.03);
+  border:1px solid rgba(255,255,255,0.04);
+  padding:12px;
+  border-radius:8px;
+  margin-bottom:12px;
+}
+.controls .row{
+  display:flex;
+  gap:12px;
+  align-items:center;
+  flex-wrap:wrap;
+  margin-bottom:8px;
+}
+.controls label{font-size:0.95rem;color:#bcd9f0}
+.controls select, .controls input[type="range"]{
+  padding:6px;
+}
+
+/* Buttons */
+button{
+  padding:8px 12px;
+  border-radius:6px;
+  border:1px solid rgba(255,255,255,0.06);
+  background:linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01));
+  color:var(--muted);
+  cursor:pointer;
+}
+button:active{transform:translateY(1px)}
+button:disabled{opacity:0.45;cursor:not-allowed}
+
+/* Stats */
+.stats{
+  width:100%;
+  max-width:1100px;
+  display:flex;
+  gap:20px;
+  justify-content:flex-start;
+  margin:12px 0;
+  color:#d8e8f8;
+  font-weight:600;
+}
+
+/* Bars container */
+.bars-container{
+  width:100%;
+  max-width:1100px;
+  height:420px;
+  border:1px solid rgba(255,255,255,0.04);
+  background:linear-gradient(180deg, rgba(0,0,0,0.15), rgba(255,255,255,0.01));
+  display:flex;
+  align-items:flex-end;
+  justify-content:center;
+  padding:12px 8px;
+  overflow:hidden;
+  border-radius:8px;
+}
+
+/* Each bar */
+.bar{
+  margin:0 2px;
+  background:var(--accent);
+  width:10px;
+  transition: height 100ms ease, background-color 120ms ease;
+  border-radius:3px 3px 0 0;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.5);
+}
+
+/* Colors for visual cues */
+.bar.compare{ background:#e05353 }     /* comparing */
+.bar.swap{ background:#3fc1c9 }        /* swapping */
+.bar.sorted{ background:#71d66b }      /* sorted */
+
+/* Footer */
+footer{ margin:12px 0 30px 0; color:#9fb0c8; font-size:0.85rem }
+
+/* small row */
+.small{ font-size:0.9rem; color:#9fb0c8 }
+
+/* responsive */
+@media (max-width:700px){
+  .bars-container{ height:300px }
+  .bar{ width:6px; margin:0 1px }
+}

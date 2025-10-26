@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Efficiency in Order — Sorting Visualizer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Efficiency in Order: Sorting Visualizer</h1>
+    <p class="sub">Compare Bubble, Selection, Insertion, Merge & Quick sort — watch how they move and compare performance.</p>
+  </header>
+
+  <main>
+    <section class="controls">
+      <div class="row">
+        <label for="algorithm">Algorithm:</label>
+        <select id="algorithm">
+          <option value="bubble">Bubble Sort</option>
+          <option value="selection">Selection Sort</option>
+          <option value="insertion">Insertion Sort</option>
+          <option value="merge">Merge Sort</option>
+          <option value="quick">Quick Sort</option>
+        </select>
+
+        <label for="size">Array Size:</label>
+        <input id="size" type="range" min="10" max="120" value="40" />
+
+        <label for="speed">Speed:</label>
+        <input id="speed" type="range" min="1" max="200" value="60" />
+      </div>
+
+      <div class="row">
+        <button id="generate">Generate New Array</button>
+        <button id="sort">Start Sorting</button>
+        <button id="stop">Stop</button>
+      </div>
+
+      <div class="row small">
+        <span>Size: <span id="sizeVal">40</span></span>
+        <span>Delay(ms): <span id="delayVal">60</span></span>
+      </div>
+    </section>
+
+    <section class="stats">
+      <div>Time: <span id="time">0 ms</span></div>
+      <div>Comparisons: <span id="comparisons">0</span></div>
+      <div>Swaps: <span id="swaps">0</span></div>
+    </section>
+
+    <section id="bars-container" class="bars-container" aria-label="bars visualization"></section>
+
+    <footer>
+      <small>Built for B.Tech mini project. Implemented with plain HTML/CSS/JS.</small>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
