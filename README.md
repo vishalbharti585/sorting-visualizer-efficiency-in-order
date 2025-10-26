@@ -38,4 +38,4 @@ To visualize and compare the internal working and efficiency of various sorting 
 ## ⚙️ How to Run Locally
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/<your-username>/sorting-visualizer.git
+   https://github.com/vishalbharti585/sorting-visualizer-efficiency-in-order
