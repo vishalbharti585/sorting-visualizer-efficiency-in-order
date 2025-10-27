@@ -1,7 +1,12 @@
-# Efficiency in Order: Sorting Algorithm Visualizer
+# ⚡ Efficiency in Order: Sorting Algorithm Visualizer
 
 An interactive **web-based sorting visualizer** that demonstrates how different sorting algorithms work step-by-step.  
 Built using **HTML, CSS, and JavaScript**, this project helps users understand how algorithms like **Bubble Sort**, **Selection Sort**, **Insertion Sort**, **Merge Sort**, and **Quick Sort** behave and differ in efficiency.
+
+---
+
+## 🔗 Live Demo  
+[👉 Click here to view the Sorting Visualizer](https://vishalbharti585.github.io/sorting-visualizer-efficiency-in-order/)  
 
 ---
 
@@ -20,7 +25,7 @@ To visualize and compare the internal working and efficiency of various sorting 
 - Start, stop, and regenerate array anytime
 - Color-coded animation for better understanding:
   - 🔴 Red – Comparing  
-  - 🟦 Blue – Swapping  
+  - 🟧 Orange – Swapping  
   - 🟩 Green – Sorted  
 
 ---
@@ -38,4 +43,4 @@ To visualize and compare the internal working and efficiency of various sorting 
 ## ⚙️ How to Run Locally
 1. **Clone the repository:**
    ```bash
-   https://github.com/vishalbharti585/sorting-visualizer-efficiency-in-order
+   git clone https://github.com/vishalbharti585/sorting-visualizer-efficiency-in-order.git
